@@ -7,7 +7,6 @@ def recursive_count(coins):
 	return recursive_count_helper(coins, 0, cache)
 
 def recursive_count_helper(coins_left, index, cache):
-	print coins_left, index, cache
 	if coins_left == 0:
 		return 1
 	elif index == len(coins):
@@ -33,9 +32,14 @@ def iterative_count(coins_left):
 		table[i][len(coins)] = 0
 	for i in range(len(coins) + 1):
 		table[0][i] = 1
-	print(table)
 
-	for i in range()
+	for curr_index in range(len(coins) - 1, -1, -1):
+		for curr_coins in range(coins_left + 1):
+			total = 0
+			for i in range(curr_coins / coins[curr_index] + 1):
+				total += table[curr_coins - i * coins[curr_index]][curr_index + 1]
+			table[curr_coins][curr_index] = total
+	return table[200][0]
 
-iterative_count(200)
+print(iterative_count(200))
 
