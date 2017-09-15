@@ -2,4 +2,4 @@
 
 My solutions to Project Euler problems. 
 
-I often used these problems to explore new concepts in number theory and coding (e.g. Sieve of Eratosthenes, Prime Number Theorem, using Cython, etc.). 
+I often used these problems to explore new concepts in number theory and coding (e.g. Sieve of Eratosthenes, Prime Number Theorem, using Cython, etc.). Still a work in progress.
